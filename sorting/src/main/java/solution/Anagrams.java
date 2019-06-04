@@ -6,11 +6,18 @@ import java.util.Map;
 public class Anagrams {
 
     /*
-     *
+     *assuming both s1 and s2 are not null
      *
      */
 
     public Boolean isAnagram(String s1, String s2) {
+
+
+
+        if(s1.length() != s2.length()){
+            return false;
+        }
+
         Map<Character, Integer> map = new HashMap<>();
 
         for (Character c : s1.toCharArray()) {

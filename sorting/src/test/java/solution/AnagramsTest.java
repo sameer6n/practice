@@ -30,4 +30,16 @@ public class AnagramsTest {
 
 
     }
+
+    @Test
+    public void isAnagramsizeTest() {
+        Anagrams anagrams = new Anagrams();
+        assertEquals(false,anagrams.isAnagram("samee1","lam"));
+
+
+    }
+
+
+
+
 }
